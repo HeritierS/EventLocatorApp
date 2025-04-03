@@ -1,0 +1,16 @@
+{
+    "login": "Login",
+    "register": "Register",
+    "username": "Username",
+    "password": "Password",
+    "latitude": "Latitude",
+    "longitude": "Longitude",
+    "events": "Events",
+    "create_event": "Create Event",
+    "logout": "Logout",
+    "title": "Title",
+    "description": "Description",
+    "create": "Create",
+    "delete": "Delete",
+    "back": "Back"
+  }

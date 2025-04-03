@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= __("login") %></title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1><%= __("login") %></h1>
+  <form method="POST">
+    <input type="text" name="username" placeholder="<%= __("username") %>" required>
+    <input type="password" name="password" placeholder="<%= __("password") %>" required>
+    <button type="submit"><%= __("login") %></button>
+  </form>
+  <a href="/register"><%= __("register") %></a>
+  <select onchange="location = '/login?lang=' + this.value;">
+    <option value="en" <%= locale === 'en' ? 'selected' : '' %>>English</option>
+    <option value="es" <%= locale === 'es' ? 'selected' : '' %>>Español</option>
+  </select>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= __("create_event") %></title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1><%= __("create_event") %></h1>
+  <form method="POST">
+    <input type="text" name="title" placeholder="<%= __("title") %>" required>
+    <textarea name="description" placeholder="<%= __("description") %>"></textarea>
+    <input type="number" name="latitude" placeholder="<%= __("latitude") %>" step="any" required>
+    <input type="number" name="longitude" placeholder="<%= __("longitude") %>" step="any" required>
+    <input type="datetime-local" name="dateTime" required>
+    <select name="category" required>
+      <option value="music">Music</option>
+      <option value="sports">Sports</option>
+      <option value="art">Art</option>
+    </select>
+    <button type="submit"><%= __("create") %></button>
+  </form>
+  <a href="/events"><%= __("back") %></a>
+</body>
+</html>

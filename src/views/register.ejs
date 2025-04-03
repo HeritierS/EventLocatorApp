@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= __("register") %></title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1><%= __("register") %></h1>
+  <form method="POST">
+    <input type="text" name="username" placeholder="<%= __("username") %>" required>
+    <input type="password" name="password" placeholder="<%= __("password") %>" required>
+    <input type="number" name="latitude" placeholder="<%= __("latitude") %>" step="any" required>
+    <input type="number" name="longitude" placeholder="<%= __("longitude") %>" step="any" required>
+    <select name="categories" multiple required>
+      <option value="music">Music</option>
+      <option value="sports">Sports</option>
+      <option value="art">Art</option>
+    </select>
+    <button type="submit"><%= __("register") %></button>
+  </form>
+  <a href="/login"><%= __("login") %></a>
+</body>
+</html>

@@ -1,0 +1,11 @@
+/* Add your custom styles here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+  }

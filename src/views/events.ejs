@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= __("events") %></title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1><%= __("events") %></h1>
+  <a href="/events/create"><%= __("create_event") %></a>
+  <a href="/logout"><%= __("logout") %></a>
+  <ul>
+    <% events.forEach(event => { %>
+      <li>
+        <%= event.title %> - <%= event.category %> - <%= event.date_time %>
+        <form method="POST" action="/events/delete/<%= event.id %>" style="display:inline;">
+          <button type="submit"><%= __("delete") %></button>
+        </form>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>

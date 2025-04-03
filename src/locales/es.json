@@ -1,0 +1,16 @@
+{
+    "login": "Iniciar Sesión",
+    "register": "Registrarse",
+    "username": "Nombre de usuario",
+    "password": "Contraseña",
+    "latitude": "Latitud",
+    "longitude": "Longitud",
+    "events": "Eventos",
+    "create_event": "Crear Evento",
+    "logout": "Cerrar Sesión",
+    "title": "Título",
+    "description": "Descripción",
+    "create": "Crear",
+    "delete": "Eliminar",
+    "back": "Volver"
+  }
